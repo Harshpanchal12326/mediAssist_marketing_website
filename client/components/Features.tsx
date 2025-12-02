@@ -48,11 +48,11 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="py-20 md:py-32 bg-gray-50 dark:bg-charcoal-800">
+    <section id="features" className="py-20 md:py-32 bg-charcoal-800 dark-bg-grid relative">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground glow-heading">
             Why Choose mediassist
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -67,15 +67,15 @@ export function Features() {
             return (
               <div
                 key={idx}
-                className="group relative p-8 rounded-2xl bg-white dark:bg-charcoal-900 border border-border hover:border-primary/50 smooth-transition hover:shadow-lg hover:-translate-y-1"
+                className="group relative p-8 rounded-2xl bg-charcoal-900 border border-primary/30 glow-card smooth-transition hover:-translate-y-1"
               >
-                {/* Icon Background */}
-                <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${feature.color} rounded-full mix-blend-multiply filter blur-3xl opacity-10 group-hover:opacity-20 smooth-transition`}></div>
+                {/* Icon Background Glow */}
+                <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${feature.color} rounded-full mix-blend-screen filter blur-3xl opacity-10 group-hover:opacity-20 smooth-transition`}></div>
 
                 {/* Content */}
                 <div className="relative">
-                  {/* Icon */}
-                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center mb-5 group-hover:scale-110 smooth-transition`}>
+                  {/* Icon with glow */}
+                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center mb-5 group-hover:scale-110 smooth-transition glow-icon`}>
                     <IconComponent size={24} className="text-white" />
                   </div>
 
@@ -90,8 +90,8 @@ export function Features() {
                   </p>
                 </div>
 
-                {/* Border accent on hover */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/10 smooth-transition pointer-events-none"></div>
+                {/* Glow overlay accent */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-transparent group-hover:from-primary/10 smooth-transition pointer-events-none"></div>
               </div>
             );
           })}
