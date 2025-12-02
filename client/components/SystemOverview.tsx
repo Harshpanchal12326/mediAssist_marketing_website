@@ -2,10 +2,11 @@ import { ArrowRight } from "lucide-react";
 
 export function SystemOverview() {
   return (
-    <section className="py-20 md:py-32 bg-white dark:bg-charcoal-900 relative overflow-hidden">
-      {/* Background elements */}
+    <section className="py-20 md:py-32 bg-charcoal-900 dark-bg-grid relative overflow-hidden">
+      {/* Background glow elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-teal rounded-full mix-blend-multiply filter blur-3xl opacity-5 dark:opacity-10"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-teal rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-400 rounded-full mix-blend-screen filter blur-3xl opacity-10"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -13,10 +14,10 @@ export function SystemOverview() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Left Side - Text */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground glow-heading">
               One Platform,
               <br />
-              <span className="bg-gradient-to-r from-teal-500 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-teal-400 via-cyan-300 to-teal-400 bg-clip-text text-transparent animate-pulse">
                 Infinite Possibilities
               </span>
             </h2>
