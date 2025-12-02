@@ -50,11 +50,11 @@ const apps = [
 
 export function AppsShowcase() {
   return (
-    <section id="apps" className="py-20 md:py-32 bg-white dark:bg-charcoal-900">
+    <section id="apps" className="py-20 md:py-32 bg-charcoal-900 dark-bg-grid relative">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground glow-heading">
             Three Powerful Apps
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -70,15 +70,15 @@ export function AppsShowcase() {
             return (
               <div
                 key={app.id}
-                className={`group relative rounded-2xl overflow-hidden smooth-transition hover:shadow-xl hover:-translate-y-1 ${app.bgColor}`}
+                className={`group relative rounded-2xl overflow-hidden smooth-transition hover:-translate-y-2 border border-primary/30 glow-card bg-charcoal-800`}
               >
-                {/* Gradient Background */}
-                <div className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-br ${app.color} rounded-full mix-blend-multiply filter blur-3xl opacity-20 group-hover:opacity-30 smooth-transition`}></div>
+                {/* Gradient Background Glow */}
+                <div className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-br ${app.color} rounded-full mix-blend-screen filter blur-3xl opacity-10 group-hover:opacity-20 smooth-transition`}></div>
 
                 {/* Content */}
                 <div className="relative p-8 md:p-10">
-                  {/* Icon */}
-                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${app.color} flex items-center justify-center mb-6 group-hover:scale-110 smooth-transition`}>
+                  {/* Icon with glow */}
+                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${app.color} flex items-center justify-center mb-6 group-hover:scale-110 smooth-transition glow-icon`}>
                     <IconComponent size={24} className="text-white" />
                   </div>
 
@@ -95,7 +95,7 @@ export function AppsShowcase() {
                   <ul className="space-y-3 mb-8">
                     {app.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-br ${app.color} mt-2 flex-shrink-0`}></div>
+                        <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-br ${app.color} mt-2 flex-shrink-0 animate-pulse`}></div>
                         <span className="text-sm text-foreground">{feature}</span>
                       </li>
                     ))}
@@ -104,9 +104,10 @@ export function AppsShowcase() {
                   {/* Learn More Link */}
                   <a
                     href={`#app-${app.id}`}
-                    className={`inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 smooth-transition`}
+                    className={`inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 smooth-transition group/link`}
                   >
-                    Learn More →
+                    Learn More
+                    <span className="group-hover/link:translate-x-1 smooth-transition">→</span>
                   </a>
                 </div>
               </div>
@@ -114,30 +115,33 @@ export function AppsShowcase() {
           })}
         </div>
 
-        {/* Download Section */}
-        <div className="bg-gradient-to-br from-charcoal-800 to-charcoal-900 dark:from-charcoal-950 dark:to-charcoal-800 rounded-2xl overflow-hidden">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 p-8 md:p-12">
+        {/* Download Section with glow */}
+        <div className="relative rounded-2xl overflow-hidden border border-primary/30 glow-card bg-gradient-to-br from-charcoal-900 to-charcoal-800">
+          {/* Glow effect background */}
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-500/10 to-cyan-500/10 pointer-events-none"></div>
+
+          <div className="relative flex flex-col md:flex-row items-center justify-between gap-8 p-8 md:p-12">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3 glow-heading">
                 Desktop Software Available
               </h3>
-              <p className="text-gray-300 mb-6 max-w-md">
+              <p className="text-muted-foreground mb-6 max-w-md">
                 Download the desktop version of our apps for enhanced features and offline access.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <button className="inline-flex items-center gap-2 px-6 py-3 bg-white text-charcoal-900 font-semibold rounded-lg hover:bg-gray-100 smooth-transition">
+                <button className="relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-teal text-charcoal-900 font-semibold rounded-lg glow-button group/btn">
                   <Download size={20} />
                   Download for Windows
                 </button>
-                <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 smooth-transition">
+                <button className="inline-flex items-center gap-2 px-6 py-3 bg-primary/20 text-foreground font-semibold rounded-lg border border-primary/40 hover:border-primary/70 hover:bg-primary/30 smooth-transition glow-card">
                   <Download size={20} />
                   Download for Mac
                 </button>
               </div>
             </div>
             <div className="hidden lg:block w-32 h-32">
-              <div className="w-full h-full rounded-xl bg-gradient-to-br from-teal-400 to-cyan-400 flex items-center justify-center">
-                <Download size={64} className="text-white opacity-50" />
+              <div className="w-full h-full rounded-xl bg-gradient-to-br from-teal-400 to-cyan-400 flex items-center justify-center glow-icon animate-float-glow">
+                <Download size={64} className="text-white opacity-70" />
               </div>
             </div>
           </div>
