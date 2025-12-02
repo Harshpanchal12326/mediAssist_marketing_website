@@ -130,27 +130,88 @@
 }
 
 @layer components {
+  /* Dark greyish glass effect with glow */
   .glass-effect {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(31, 41, 55, 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(45, 212, 191, 0.2);
+  }
+
+  .glass-effect:hover {
+    border-color: rgba(45, 212, 191, 0.4);
+    box-shadow: 0 0 20px rgba(45, 212, 191, 0.2);
   }
 
   .dark .glass-effect {
-    background: rgba(20, 20, 20, 0.5);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(24, 33, 44, 0.9);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(45, 212, 191, 0.25);
+  }
+
+  .dark .glass-effect:hover {
+    border-color: rgba(45, 212, 191, 0.5);
+    box-shadow: 0 0 30px rgba(45, 212, 191, 0.25);
   }
 
   .gradient-teal {
-    background: linear-gradient(135deg, #14b8a6 0%, #06b6d4 100%);
+    background: linear-gradient(135deg, #2dd4bf 0%, #06b6d4 100%);
   }
 
   .gradient-dark {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    background: linear-gradient(135deg, #1a2332 0%, #253546 100%);
   }
 
   .smooth-transition {
     @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Glow effects for dark theme */
+  .glow-teal {
+    @apply animate-glow-pulse;
+    filter: drop-shadow(0 0 20px rgba(45, 212, 191, 0.4));
+  }
+
+  .glow-teal:hover {
+    filter: drop-shadow(0 0 30px rgba(45, 212, 191, 0.6));
+  }
+
+  .glow-card {
+    @apply border border-teal-500/30;
+    animation: border-glow 2s ease-in-out infinite;
+  }
+
+  .glow-icon {
+    @apply bg-gradient-teal;
+    animation: glow-intense 2.5s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(45, 212, 191, 0.5);
+  }
+
+  .glow-heading {
+    animation: text-glow 2.5s ease-in-out infinite;
+  }
+
+  .glow-button {
+    @apply relative;
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .glow-button::before {
+    content: '';
+    @apply absolute inset-0 rounded-lg;
+    background: radial-gradient(circle, rgba(45, 212, 191, 0.2) 0%, transparent 70%);
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .float-glow-element {
+    @apply animate-float-glow;
+    box-shadow: 0 20px 40px rgba(45, 212, 191, 0.3);
+  }
+
+  /* Dark background with subtle grid pattern */
+  .dark-bg-grid {
+    background-image:
+      radial-gradient(circle at 20% 50%, rgba(45, 212, 191, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+    background-size: 100% 100%;
   }
 }
