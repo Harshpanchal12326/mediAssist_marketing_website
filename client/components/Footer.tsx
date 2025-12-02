@@ -130,38 +130,42 @@ export function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-white/10 mb-8"></div>
+        <div className="h-px bg-primary/20 mb-8"></div>
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           {/* Copyright */}
-          <p className="text-gray-400 text-sm">
+          <p className="text-muted-foreground text-sm">
             &copy; {currentYear} mediassist. All rights reserved.
           </p>
 
           {/* Links */}
-          <div className="flex flex-col sm:flex-row gap-6 text-gray-400 text-sm">
-            <a href="#" className="hover:text-primary smooth-transition">
+          <div className="flex flex-col sm:flex-row gap-6 text-muted-foreground text-sm">
+            <a href="#" className="hover:text-primary smooth-transition group">
               Privacy Policy
+              <span className="block h-0.5 w-0 group-hover:w-full bg-primary smooth-transition"></span>
             </a>
-            <a href="#" className="hover:text-primary smooth-transition">
+            <a href="#" className="hover:text-primary smooth-transition group">
               Terms of Service
+              <span className="block h-0.5 w-0 group-hover:w-full bg-primary smooth-transition"></span>
             </a>
-            <a href="#" className="hover:text-primary smooth-transition">
+            <a href="#" className="hover:text-primary smooth-transition group">
               Compliance
+              <span className="block h-0.5 w-0 group-hover:w-full bg-primary smooth-transition"></span>
             </a>
-            <a href="#" className="hover:text-primary smooth-transition">
+            <a href="#" className="hover:text-primary smooth-transition group">
               Security
+              <span className="block h-0.5 w-0 group-hover:w-full bg-primary smooth-transition"></span>
             </a>
           </div>
         </div>
 
         {/* Newsletter CTA */}
-        <div className="mt-12 pt-12 border-t border-white/10">
+        <div className="mt-12 pt-12 border-t border-primary/20">
           <div className="max-w-md mx-auto text-center md:max-w-none md:text-left md:flex md:items-center md:justify-between gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-2 text-white">Stay Updated</h3>
-              <p className="text-gray-400 text-sm">
+              <h3 className="text-xl font-bold mb-2 text-foreground glow-heading">Stay Updated</h3>
+              <p className="text-muted-foreground text-sm">
                 Subscribe to our newsletter for healthcare insights and product updates.
               </p>
             </div>
@@ -169,11 +173,11 @@ export function Footer() {
               <input
                 type="email"
                 placeholder="Your email"
-                className="px-4 py-2 rounded-lg bg-white/10 text-white placeholder-gray-500 border border-white/20 focus:border-primary focus:outline-none smooth-transition min-w-60"
+                className="px-4 py-2 rounded-lg bg-charcoal-800 text-white placeholder-muted-foreground border border-primary/30 focus:border-primary focus:outline-none smooth-transition min-w-60 glow-card"
               />
               <button
                 type="submit"
-                className="px-6 py-2 bg-gradient-teal text-white font-semibold rounded-lg hover:shadow-lg smooth-transition whitespace-nowrap"
+                className="relative px-6 py-2 bg-gradient-teal text-charcoal-900 font-semibold rounded-lg glow-button whitespace-nowrap"
               >
                 Subscribe
               </button>
