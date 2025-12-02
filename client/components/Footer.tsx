@@ -5,19 +5,23 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="bg-charcoal-900 dark:bg-charcoal-950 text-white py-16 md:py-24">
-      <div className="container mx-auto px-4">
+    <footer id="contact" className="bg-charcoal-950 dark-bg-grid text-white py-16 md:py-24 border-t border-primary/20 relative">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-teal rounded-full mix-blend-screen filter blur-3xl opacity-5"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="md:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-teal">
+            <Link to="/" className="flex items-center gap-2 mb-4 group">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-teal glow-icon">
                 <span className="text-white text-sm font-bold">M</span>
               </div>
-              <span className="font-bold text-lg">mediassist</span>
+              <span className="font-bold text-lg group-hover:text-primary smooth-transition">mediassist</span>
             </Link>
-            <p className="text-gray-400 mb-6">
+            <p className="text-muted-foreground mb-6">
               Involving Healthcare Byte by Byte
             </p>
             <div className="flex gap-4">
@@ -25,7 +29,7 @@ export function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary hover:text-charcoal-900 smooth-transition"
+                className="w-10 h-10 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-charcoal-900 smooth-transition glow-card"
               >
                 <Linkedin size={20} />
               </a>
@@ -33,7 +37,7 @@ export function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary hover:text-charcoal-900 smooth-transition"
+                className="w-10 h-10 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-charcoal-900 smooth-transition glow-card"
               >
                 <Twitter size={20} />
               </a>
@@ -41,7 +45,7 @@ export function Footer() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary hover:text-charcoal-900 smooth-transition"
+                className="w-10 h-10 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-charcoal-900 smooth-transition glow-card"
               >
                 <Github size={20} />
               </a>
