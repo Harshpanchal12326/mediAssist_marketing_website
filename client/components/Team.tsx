@@ -7,8 +7,8 @@ const team = [
     role: "CEO & CTO",
     description:
       "Visionary leader and technical architect of mediassist. Driving innovation in healthcare technology.",
-    email: "adit@mediassist.com",
-    linkedin: "https://linkedin.com",
+    email: "aditghosh5112005@gmail.com",
+    linkedin: "https://linkedin.com/in/adit-ghosh-9b4723326",
     initials: "AG",
     color: "from-blue-500 to-cyan-500",
   },
@@ -18,8 +18,8 @@ const team = [
     role: "COO",
     description:
       "Operations expert ensuring seamless healthcare platform delivery and user satisfaction.",
-    email: "subhrajeet@mediassist.com",
-    linkedin: "https://linkedin.com",
+    email: "subhrajeet1950@gmail.com",
+    linkedin: "https://linkedin.com/in/subhrajeet-dash-9a449831b",
     initials: "SD",
     color: "from-emerald-500 to-teal-500",
   },
@@ -29,8 +29,8 @@ const team = [
     role: "CFO",
     description:
       "Financial strategist managing sustainable growth and business operations of mediassist.",
-    email: "harsh@mediassist.com",
-    linkedin: "https://linkedin.com",
+    email: "harshpanchal12326@gmail.com",
+    linkedin: "https://linkedin.com/in/harsh-panchal-a4853a340",
     initials: "HP",
     color: "from-orange-500 to-rose-500",
   },
