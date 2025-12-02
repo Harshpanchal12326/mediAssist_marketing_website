@@ -21,7 +21,7 @@ export function Header() {
           className="flex items-center gap-2 font-bold text-xl group"
         >
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-teal glow-icon">
-            <img src="favicon.ico" alt="MediAssist" width="500" height="600">
+            <img src="/favicon.ico" alt="MediAssist" width="500" height="600"/>
           </div>
           <span className="hidden sm:inline text-foreground group-hover:text-primary smooth-transition">
             MediAssist
