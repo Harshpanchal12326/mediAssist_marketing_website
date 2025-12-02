@@ -231,7 +231,7 @@
 
   /* Glow effects for dark theme */
   .glow-teal {
-    @apply animate-glow-pulse;
+    animation: glow-pulse 3s ease-in-out infinite;
     filter: drop-shadow(0 0 20px rgba(45, 212, 191, 0.4));
   }
 
@@ -240,12 +240,12 @@
   }
 
   .glow-card {
-    @apply border border-teal-500/30;
+    border: 1px solid rgba(45, 212, 191, 0.3);
     animation: border-glow 2s ease-in-out infinite;
   }
 
   .glow-icon {
-    @apply bg-gradient-teal;
+    background: linear-gradient(135deg, #2dd4bf 0%, #06b6d4 100%);
     animation: glow-intense 2.5s ease-in-out infinite;
     box-shadow: 0 0 20px rgba(45, 212, 191, 0.5);
   }
@@ -255,19 +255,21 @@
   }
 
   .glow-button {
-    @apply relative;
+    position: relative;
     animation: pulse-glow 2s ease-in-out infinite;
   }
 
   .glow-button::before {
     content: '';
-    @apply absolute inset-0 rounded-lg;
+    position: absolute;
+    inset: 0;
+    border-radius: 0.5rem;
     background: radial-gradient(circle, rgba(45, 212, 191, 0.2) 0%, transparent 70%);
     animation: pulse-glow 2s ease-in-out infinite;
   }
 
   .float-glow-element {
-    @apply animate-float-glow;
+    animation: float-glow 3s ease-in-out infinite;
     box-shadow: 0 20px 40px rgba(45, 212, 191, 0.3);
   }
 
