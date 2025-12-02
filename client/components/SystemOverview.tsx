@@ -89,32 +89,32 @@ export function SystemOverview() {
               </div>
 
               {/* Patient node */}
-              <div className="absolute top-0 left-0 w-20 h-20 rounded-lg bg-rose-100 dark:bg-rose-950 border-2 border-rose-400 flex items-center justify-center">
-                <div className="text-center text-xs font-bold text-rose-700 dark:text-rose-300">
+              <div className="absolute top-0 left-0 w-20 h-20 rounded-lg bg-charcoal-800 border-2 border-rose-400/60 border-glow flex items-center justify-center hover:scale-110 smooth-transition">
+                <div className="text-center text-xs font-bold text-rose-300">
                   <div className="mb-1">👤</div>
                   <p>Patient</p>
                 </div>
               </div>
 
               {/* Doctor node */}
-              <div className="absolute top-0 right-0 w-20 h-20 rounded-lg bg-blue-100 dark:bg-blue-950 border-2 border-blue-400 flex items-center justify-center">
-                <div className="text-center text-xs font-bold text-blue-700 dark:text-blue-300">
+              <div className="absolute top-0 right-0 w-20 h-20 rounded-lg bg-charcoal-800 border-2 border-blue-400/60 border-glow flex items-center justify-center hover:scale-110 smooth-transition">
+                <div className="text-center text-xs font-bold text-blue-300">
                   <div className="mb-1">👨‍⚕️</div>
                   <p>Doctor</p>
                 </div>
               </div>
 
               {/* Pharmacy node */}
-              <div className="absolute bottom-0 right-8 w-20 h-20 rounded-lg bg-green-100 dark:bg-green-950 border-2 border-green-400 flex items-center justify-center">
-                <div className="text-center text-xs font-bold text-green-700 dark:text-green-300">
+              <div className="absolute bottom-0 right-8 w-20 h-20 rounded-lg bg-charcoal-800 border-2 border-green-400/60 border-glow flex items-center justify-center hover:scale-110 smooth-transition">
+                <div className="text-center text-xs font-bold text-green-300">
                   <div className="mb-1">💊</div>
                   <p>Pharmacy</p>
                 </div>
               </div>
 
               {/* Database node */}
-              <div className="absolute bottom-0 left-8 w-20 h-20 rounded-lg bg-purple-100 dark:bg-purple-950 border-2 border-purple-400 flex items-center justify-center">
-                <div className="text-center text-xs font-bold text-purple-700 dark:text-purple-300">
+              <div className="absolute bottom-0 left-8 w-20 h-20 rounded-lg bg-charcoal-800 border-2 border-purple-400/60 border-glow flex items-center justify-center hover:scale-110 smooth-transition">
+                <div className="text-center text-xs font-bold text-purple-300">
                   <div className="mb-1">🗄️</div>
                   <p>Database</p>
                 </div>
