@@ -15,6 +15,7 @@ const apps = [
     icon: Heart,
     color: "from-rose-500 to-pink-500",
     bgColor: "bg-rose-50 dark:bg-rose-950/20",
+    link: "https://healthbudddy.netlify.app",
   },
   {
     id: "clinicxpert",
@@ -30,6 +31,7 @@ const apps = [
     icon: Stethoscope,
     color: "from-blue-500 to-cyan-500",
     bgColor: "bg-blue-50 dark:bg-blue-950/20",
+    link: "https://clinicxpert.netlify.app",
   },
   {
     id: "pharmamate",
@@ -45,6 +47,7 @@ const apps = [
     icon: Pill,
     color: "from-emerald-500 to-teal-500",
     bgColor: "bg-emerald-50 dark:bg-emerald-950/20",
+    link: "https://pharmamate.netlify.app",
   },
 ];
 
@@ -82,7 +85,7 @@ export function AppsShowcase() {
 
                 {/* Content */}
                 <div className="relative p-8 md:p-10">
-                  {/* Icon with glow */}
+                  {/* Icon */}
                   <div
                     className={`w-12 h-12 rounded-lg bg-gradient-to-br ${app.color} flex items-center justify-center mb-6 group-hover:scale-110 smooth-transition glow-icon`}
                   >
@@ -118,7 +121,9 @@ export function AppsShowcase() {
 
                   {/* Learn More Link */}
                   <a
-                    href="https://healthbudddy.netlify.app"
+                    href={app.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 smooth-transition group/link`}
                   >
                     Learn More
@@ -132,9 +137,8 @@ export function AppsShowcase() {
           })}
         </div>
 
-        {/* Download Section with glow */}
+        {/* Download Section */}
         <div className="relative rounded-2xl overflow-hidden border border-primary/30 glow-card bg-gradient-to-br from-charcoal-900 to-charcoal-800">
-          {/* Glow effect background */}
           <div className="absolute inset-0 bg-gradient-to-r from-teal-500/10 to-cyan-500/10 pointer-events-none"></div>
 
           <div className="relative flex flex-col md:flex-row items-center justify-between gap-8 p-8 md:p-12">
@@ -157,6 +161,7 @@ export function AppsShowcase() {
                 </button>
               </div>
             </div>
+
             <div className="hidden lg:block w-32 h-32">
               <div className="w-full h-full rounded-xl bg-gradient-to-br from-teal-400 to-cyan-400 flex items-center justify-center glow-icon animate-float-glow">
                 <Download size={64} className="text-white opacity-70" />
