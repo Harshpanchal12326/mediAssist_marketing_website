@@ -22,9 +22,10 @@ export function SystemOverview() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              mediassist is more than just an app. It's a comprehensive healthcare ecosystem that connects 
-              all stakeholders in the healthcare industry. From patient appointments to prescription management, 
-              everything works seamlessly together.
+              mediassist is more than just an app. It's a comprehensive
+              healthcare ecosystem that connects all stakeholders in the
+              healthcare industry. From patient appointments to prescription
+              management, everything works seamlessly together.
             </p>
 
             <div className="space-y-6 mb-8">
@@ -33,9 +34,12 @@ export function SystemOverview() {
                   <span className="text-white font-bold text-sm">1</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1 text-foreground group-hover:text-primary smooth-transition">Patient Access</h3>
+                  <h3 className="font-bold text-lg mb-1 text-foreground group-hover:text-primary smooth-transition">
+                    Patient Access
+                  </h3>
                   <p className="text-muted-foreground">
-                    Book appointments, order medicines, and access your complete health records in one place.
+                    Book appointments, order medicines, and access your complete
+                    health records in one place.
                   </p>
                 </div>
               </div>
@@ -45,9 +49,12 @@ export function SystemOverview() {
                   <span className="text-white font-bold text-sm">2</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1 text-foreground group-hover:text-primary smooth-transition">Doctor Management</h3>
+                  <h3 className="font-bold text-lg mb-1 text-foreground group-hover:text-primary smooth-transition">
+                    Doctor Management
+                  </h3>
                   <p className="text-muted-foreground">
-                    Manage appointments, create prescriptions, and track patient outcomes efficiently.
+                    Manage appointments, create prescriptions, and track patient
+                    outcomes efficiently.
                   </p>
                 </div>
               </div>
@@ -57,9 +64,12 @@ export function SystemOverview() {
                   <span className="text-white font-bold text-sm">3</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1 text-foreground group-hover:text-primary smooth-transition">Pharmacy Integration</h3>
+                  <h3 className="font-bold text-lg mb-1 text-foreground group-hover:text-primary smooth-transition">
+                    Pharmacy Integration
+                  </h3>
                   <p className="text-muted-foreground">
-                    Verify patient IDs, dispense medicines securely, and maintain prescription records.
+                    Verify patient IDs, dispense medicines securely, and
+                    maintain prescription records.
                   </p>
                 </div>
               </div>
@@ -83,7 +93,9 @@ export function SystemOverview() {
               {/* Main mediassist node */}
               <div className="absolute z-10 w-24 h-24 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center shadow-lg">
                 <div className="text-center text-white">
-                  <p className="font-bold text-xs tracking-widest">MEDIASSIST</p>
+                  <p className="font-bold text-xs tracking-widest">
+                    MEDIASSIST
+                  </p>
                   <p className="text-xs opacity-90">Platform</p>
                 </div>
               </div>
@@ -122,12 +134,54 @@ export function SystemOverview() {
 
               {/* Connection lines (SVG) */}
               <svg className="absolute inset-0 w-full h-full pointer-events-none">
-                <line x1="50%" y1="50%" x2="10%" y2="10%" stroke="url(#gradient)" strokeWidth="2" strokeDasharray="5,5" opacity="0.3" />
-                <line x1="50%" y1="50%" x2="90%" y2="10%" stroke="url(#gradient)" strokeWidth="2" strokeDasharray="5,5" opacity="0.3" />
-                <line x1="50%" y1="50%" x2="70%" y2="85%" stroke="url(#gradient)" strokeWidth="2" strokeDasharray="5,5" opacity="0.3" />
-                <line x1="50%" y1="50%" x2="30%" y2="85%" stroke="url(#gradient)" strokeWidth="2" strokeDasharray="5,5" opacity="0.3" />
+                <line
+                  x1="50%"
+                  y1="50%"
+                  x2="10%"
+                  y2="10%"
+                  stroke="url(#gradient)"
+                  strokeWidth="2"
+                  strokeDasharray="5,5"
+                  opacity="0.3"
+                />
+                <line
+                  x1="50%"
+                  y1="50%"
+                  x2="90%"
+                  y2="10%"
+                  stroke="url(#gradient)"
+                  strokeWidth="2"
+                  strokeDasharray="5,5"
+                  opacity="0.3"
+                />
+                <line
+                  x1="50%"
+                  y1="50%"
+                  x2="70%"
+                  y2="85%"
+                  stroke="url(#gradient)"
+                  strokeWidth="2"
+                  strokeDasharray="5,5"
+                  opacity="0.3"
+                />
+                <line
+                  x1="50%"
+                  y1="50%"
+                  x2="30%"
+                  y2="85%"
+                  stroke="url(#gradient)"
+                  strokeWidth="2"
+                  strokeDasharray="5,5"
+                  opacity="0.3"
+                />
                 <defs>
-                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
                     <stop offset="0%" stopColor="#14b8a6" />
                     <stop offset="100%" stopColor="#06b6d4" />
                   </linearGradient>

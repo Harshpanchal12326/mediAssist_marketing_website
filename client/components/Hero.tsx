@@ -6,7 +6,10 @@ export function Hero() {
       {/* Animated background decoration with glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-teal rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-pulse"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-400 rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-pulse" style={{animationDelay: "0.5s"}}></div>
+        <div
+          className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-400 rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-pulse"
+          style={{ animationDelay: "0.5s" }}
+        ></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
           <div className="absolute inset-0 bg-radial-gradient opacity-20"></div>
         </div>
@@ -36,8 +39,9 @@ export function Hero() {
 
           {/* Description */}
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            mediassist is a comprehensive healthcare ecosystem connecting patients, doctors, and pharmacies.
-            Access appointments, prescriptions, and medicines in one unified platform.
+            mediassist is a comprehensive healthcare ecosystem connecting
+            patients, doctors, and pharmacies. Access appointments,
+            prescriptions, and medicines in one unified platform.
           </p>
 
           {/* CTA Buttons with glow effects */}
@@ -47,7 +51,10 @@ export function Hero() {
               className="relative inline-flex items-center gap-2 px-8 py-3 font-semibold text-white rounded-lg bg-gradient-teal glow-button group"
             >
               Explore Apps
-              <ArrowRight size={20} className="group-hover:translate-x-1 smooth-transition" />
+              <ArrowRight
+                size={20}
+                className="group-hover:translate-x-1 smooth-transition"
+              />
             </a>
             <a
               href="#contact"
@@ -60,8 +67,12 @@ export function Hero() {
           {/* Trust Badge */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8 border-t border-primary/20">
             <div className="text-center sm:text-left">
-              <p className="text-sm font-semibold text-foreground">Trusted by Healthcare Professionals</p>
-              <p className="text-xs text-muted-foreground">Worldwide Health Database System</p>
+              <p className="text-sm font-semibold text-foreground">
+                Trusted by Healthcare Professionals
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Worldwide Health Database System
+              </p>
             </div>
           </div>
         </div>

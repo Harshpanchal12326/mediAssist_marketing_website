@@ -16,11 +16,16 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full glass-effect border-b border-primary/20 backdrop-blur-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo with glow */}
-        <Link to="/" className="flex items-center gap-2 font-bold text-xl group">
+        <Link
+          to="/"
+          className="flex items-center gap-2 font-bold text-xl group"
+        >
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-teal glow-icon">
             <span className="text-white text-sm font-bold">M</span>
           </div>
-          <span className="hidden sm:inline text-foreground group-hover:text-primary smooth-transition">mediassist</span>
+          <span className="hidden sm:inline text-foreground group-hover:text-primary smooth-transition">
+            mediassist
+          </span>
         </Link>
 
         {/* Desktop Navigation */}

@@ -50,7 +50,10 @@ const apps = [
 
 export function AppsShowcase() {
   return (
-    <section id="apps" className="py-20 md:py-32 bg-charcoal-900 dark-bg-grid relative">
+    <section
+      id="apps"
+      className="py-20 md:py-32 bg-charcoal-900 dark-bg-grid relative"
+    >
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -58,8 +61,8 @@ export function AppsShowcase() {
             Three Powerful Apps
           </h2>
           <p className="text-lg text-muted-foreground">
-            Everything you need to manage healthcare, from patients to doctors to pharmacies.
-            All connected through mediassist.
+            Everything you need to manage healthcare, from patients to doctors
+            to pharmacies. All connected through mediassist.
           </p>
         </div>
 
@@ -73,18 +76,26 @@ export function AppsShowcase() {
                 className={`group relative rounded-2xl overflow-hidden smooth-transition hover:-translate-y-2 border border-primary/30 glow-card bg-charcoal-800`}
               >
                 {/* Gradient Background Glow */}
-                <div className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-br ${app.color} rounded-full mix-blend-screen filter blur-3xl opacity-10 group-hover:opacity-20 smooth-transition`}></div>
+                <div
+                  className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-br ${app.color} rounded-full mix-blend-screen filter blur-3xl opacity-10 group-hover:opacity-20 smooth-transition`}
+                ></div>
 
                 {/* Content */}
                 <div className="relative p-8 md:p-10">
                   {/* Icon with glow */}
-                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${app.color} flex items-center justify-center mb-6 group-hover:scale-110 smooth-transition glow-icon`}>
+                  <div
+                    className={`w-12 h-12 rounded-lg bg-gradient-to-br ${app.color} flex items-center justify-center mb-6 group-hover:scale-110 smooth-transition glow-icon`}
+                  >
                     <IconComponent size={24} className="text-white" />
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-bold mb-1 text-foreground">{app.name}</h3>
-                  <p className="text-sm font-semibold text-primary mb-4">{app.subtitle}</p>
+                  <h3 className="text-2xl font-bold mb-1 text-foreground">
+                    {app.name}
+                  </h3>
+                  <p className="text-sm font-semibold text-primary mb-4">
+                    {app.subtitle}
+                  </p>
 
                   {/* Description */}
                   <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -95,8 +106,12 @@ export function AppsShowcase() {
                   <ul className="space-y-3 mb-8">
                     {app.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-br ${app.color} mt-2 flex-shrink-0 animate-pulse`}></div>
-                        <span className="text-sm text-foreground">{feature}</span>
+                        <div
+                          className={`w-1.5 h-1.5 rounded-full bg-gradient-to-br ${app.color} mt-2 flex-shrink-0 animate-pulse`}
+                        ></div>
+                        <span className="text-sm text-foreground">
+                          {feature}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -107,7 +122,9 @@ export function AppsShowcase() {
                     className={`inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 smooth-transition group/link`}
                   >
                     Learn More
-                    <span className="group-hover/link:translate-x-1 smooth-transition">→</span>
+                    <span className="group-hover/link:translate-x-1 smooth-transition">
+                      →
+                    </span>
                   </a>
                 </div>
               </div>
@@ -126,7 +143,8 @@ export function AppsShowcase() {
                 Desktop Software Available
               </h3>
               <p className="text-muted-foreground mb-6 max-w-md">
-                Download the desktop version of our apps for enhanced features and offline access.
+                Download the desktop version of our apps for enhanced features
+                and offline access.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <button className="relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-teal text-charcoal-900 font-semibold rounded-lg glow-button group/btn">

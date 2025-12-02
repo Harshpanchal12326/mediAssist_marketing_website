@@ -112,18 +112,22 @@ export default {
         },
         "glow-pulse": {
           "0%, 100%": {
-            boxShadow: "0 0 20px rgba(45, 212, 191, 0.5), 0 0 40px rgba(45, 212, 191, 0.3)",
+            boxShadow:
+              "0 0 20px rgba(45, 212, 191, 0.5), 0 0 40px rgba(45, 212, 191, 0.3)",
           },
           "50%": {
-            boxShadow: "0 0 30px rgba(45, 212, 191, 0.8), 0 0 60px rgba(45, 212, 191, 0.5)",
+            boxShadow:
+              "0 0 30px rgba(45, 212, 191, 0.8), 0 0 60px rgba(45, 212, 191, 0.5)",
           },
         },
         "glow-intense": {
           "0%, 100%": {
-            boxShadow: "0 0 30px rgba(6, 182, 212, 0.6), 0 0 60px rgba(20, 184, 166, 0.4)",
+            boxShadow:
+              "0 0 30px rgba(6, 182, 212, 0.6), 0 0 60px rgba(20, 184, 166, 0.4)",
           },
           "50%": {
-            boxShadow: "0 0 50px rgba(6, 182, 212, 1), 0 0 80px rgba(20, 184, 166, 0.6)",
+            boxShadow:
+              "0 0 50px rgba(6, 182, 212, 1), 0 0 80px rgba(20, 184, 166, 0.6)",
           },
         },
         "border-glow": {
@@ -148,10 +152,12 @@ export default {
         },
         "text-glow": {
           "0%, 100%": {
-            textShadow: "0 0 10px rgba(45, 212, 191, 0.5), 0 0 20px rgba(45, 212, 191, 0.3)",
+            textShadow:
+              "0 0 10px rgba(45, 212, 191, 0.5), 0 0 20px rgba(45, 212, 191, 0.3)",
           },
           "50%": {
-            textShadow: "0 0 20px rgba(45, 212, 191, 0.8), 0 0 30px rgba(45, 212, 191, 0.5)",
+            textShadow:
+              "0 0 20px rgba(45, 212, 191, 0.8), 0 0 30px rgba(45, 212, 191, 0.5)",
           },
         },
         "pulse-glow": {

@@ -5,7 +5,10 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="bg-charcoal-950 dark-bg-grid text-white py-16 md:py-24 border-t border-primary/20 relative">
+    <footer
+      id="contact"
+      className="bg-charcoal-950 dark-bg-grid text-white py-16 md:py-24 border-t border-primary/20 relative"
+    >
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-teal rounded-full mix-blend-screen filter blur-3xl opacity-5"></div>
       </div>
@@ -19,7 +22,9 @@ export function Footer() {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-teal glow-icon">
                 <span className="text-white text-sm font-bold">M</span>
               </div>
-              <span className="font-bold text-lg group-hover:text-primary smooth-transition">mediassist</span>
+              <span className="font-bold text-lg group-hover:text-primary smooth-transition">
+                mediassist
+              </span>
             </Link>
             <p className="text-muted-foreground mb-6">
               Involving Healthcare Byte by Byte
@@ -57,17 +62,26 @@ export function Footer() {
             <h4 className="font-bold mb-6 text-white">Products</h4>
             <ul className="space-y-3 text-gray-400">
               <li>
-                <a href="#healthbuddyy" className="hover:text-primary smooth-transition">
+                <a
+                  href="#healthbuddyy"
+                  className="hover:text-primary smooth-transition"
+                >
                   HealthBuddyy
                 </a>
               </li>
               <li>
-                <a href="#clinicxpert" className="hover:text-primary smooth-transition">
+                <a
+                  href="#clinicxpert"
+                  className="hover:text-primary smooth-transition"
+                >
                   ClinicXpert
                 </a>
               </li>
               <li>
-                <a href="#pharmamate" className="hover:text-primary smooth-transition">
+                <a
+                  href="#pharmamate"
+                  className="hover:text-primary smooth-transition"
+                >
                   PharmaMate
                 </a>
               </li>
@@ -84,7 +98,10 @@ export function Footer() {
             <h4 className="font-bold mb-6 text-white">Company</h4>
             <ul className="space-y-3 text-gray-400">
               <li>
-                <a href="#team" className="hover:text-primary smooth-transition">
+                <a
+                  href="#team"
+                  className="hover:text-primary smooth-transition"
+                >
                   Team
                 </a>
               </li>
@@ -112,19 +129,13 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-gray-400 hover:text-primary smooth-transition">
                 <Mail size={18} />
-                <a href="mailto:hello@mediassist.com">
-                  hello@mediassist.com
-                </a>
+                <a href="mailto:hello@mediassist.com">hello@mediassist.com</a>
               </li>
               <li className="flex items-center gap-3 text-gray-400 hover:text-primary smooth-transition">
                 <Phone size={18} />
-                <a href="tel:+1234567890">
-                  +1 (234) 567-890
-                </a>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
               </li>
-              <li className="text-gray-400">
-                Worldwide Healthcare Network
-              </li>
+              <li className="text-gray-400">Worldwide Healthcare Network</li>
             </ul>
           </div>
         </div>
@@ -164,9 +175,12 @@ export function Footer() {
         <div className="mt-12 pt-12 border-t border-primary/20">
           <div className="max-w-md mx-auto text-center md:max-w-none md:text-left md:flex md:items-center md:justify-between gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-2 text-foreground glow-heading">Stay Updated</h3>
+              <h3 className="text-xl font-bold mb-2 text-foreground glow-heading">
+                Stay Updated
+              </h3>
               <p className="text-muted-foreground text-sm">
-                Subscribe to our newsletter for healthcare insights and product updates.
+                Subscribe to our newsletter for healthcare insights and product
+                updates.
               </p>
             </div>
             <form className="flex gap-2">

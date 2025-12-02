@@ -5,7 +5,8 @@ const team = [
     id: "adit-ghosh",
     name: "Adit Ghosh",
     role: "CEO & CTO",
-    description: "Visionary leader and technical architect of mediassist. Driving innovation in healthcare technology.",
+    description:
+      "Visionary leader and technical architect of mediassist. Driving innovation in healthcare technology.",
     email: "adit@mediassist.com",
     linkedin: "https://linkedin.com",
     initials: "AG",
@@ -15,7 +16,8 @@ const team = [
     id: "subhrajeet-dash",
     name: "Subhrajeet Dash",
     role: "COO",
-    description: "Operations expert ensuring seamless healthcare platform delivery and user satisfaction.",
+    description:
+      "Operations expert ensuring seamless healthcare platform delivery and user satisfaction.",
     email: "subhrajeet@mediassist.com",
     linkedin: "https://linkedin.com",
     initials: "SD",
@@ -25,7 +27,8 @@ const team = [
     id: "harsh-panchal",
     name: "Harsh Panchal",
     role: "CFO",
-    description: "Financial strategist managing sustainable growth and business operations of mediassist.",
+    description:
+      "Financial strategist managing sustainable growth and business operations of mediassist.",
     email: "harsh@mediassist.com",
     linkedin: "https://linkedin.com",
     initials: "HP",
@@ -35,7 +38,10 @@ const team = [
 
 export function Team() {
   return (
-    <section id="team" className="py-20 md:py-32 bg-charcoal-800 dark-bg-grid relative">
+    <section
+      id="team"
+      className="py-20 md:py-32 bg-charcoal-800 dark-bg-grid relative"
+    >
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -43,7 +49,8 @@ export function Team() {
             Meet the Team
           </h2>
           <p className="text-lg text-muted-foreground">
-            Experienced healthcare and technology professionals dedicated to transforming the healthcare industry.
+            Experienced healthcare and technology professionals dedicated to
+            transforming the healthcare industry.
           </p>
         </div>
 
@@ -55,7 +62,9 @@ export function Team() {
               className="group bg-charcoal-900 rounded-2xl overflow-hidden border border-primary/30 glow-card smooth-transition hover:-translate-y-2"
             >
               {/* Photo Placeholder with glow */}
-              <div className={`h-56 bg-gradient-to-br ${member.color} flex items-center justify-center relative overflow-hidden glow-icon group-hover:animate-pulse`}>
+              <div
+                className={`h-56 bg-gradient-to-br ${member.color} flex items-center justify-center relative overflow-hidden glow-icon group-hover:animate-pulse`}
+              >
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/60 to-transparent opacity-0 group-hover:opacity-100 smooth-transition"></div>
 
@@ -68,8 +77,12 @@ export function Team() {
               {/* Content */}
               <div className="p-8">
                 {/* Name and Role */}
-                <h3 className="text-2xl font-bold mb-1 text-foreground">{member.name}</h3>
-                <p className="text-sm font-semibold text-primary mb-4 animate-pulse">{member.role}</p>
+                <h3 className="text-2xl font-bold mb-1 text-foreground">
+                  {member.name}
+                </h3>
+                <p className="text-sm font-semibold text-primary mb-4 animate-pulse">
+                  {member.role}
+                </p>
 
                 {/* Description */}
                 <p className="text-muted-foreground mb-6 leading-relaxed text-sm">
@@ -117,8 +130,8 @@ export function Team() {
               Join Our Mission
             </h3>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              We're building the future of healthcare. If you're passionate about healthcare technology,
-              we'd love to hear from you.
+              We're building the future of healthcare. If you're passionate
+              about healthcare technology, we'd love to hear from you.
             </p>
             <a
               href="mailto:careers@mediassist.com"

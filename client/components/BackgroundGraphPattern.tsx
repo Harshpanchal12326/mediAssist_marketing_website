@@ -37,8 +37,8 @@ export function BackgroundGraphPattern() {
           const y = row * nodeDistance + 50;
 
           // Add some randomness for organic feel
-          const randomX = x + (Math.sin(row * col * 123) * 40);
-          const randomY = y + (Math.cos(row * col * 456) * 40);
+          const randomX = x + Math.sin(row * col * 123) * 40;
+          const randomY = y + Math.cos(row * col * 456) * 40;
 
           nodes.push({
             x: randomX,
