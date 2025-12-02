@@ -20,10 +20,10 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4 group">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-teal glow-icon">
-                <span className="text-white text-sm font-bold">M</span>
+            <img src="/favicon.ico" alt="MediAssist" width="500" height="600"/>
               </div>
               <span className="font-bold text-lg group-hover:text-primary smooth-transition">
-                mediassist
+                MediAssist
               </span>
             </Link>
             <p className="text-muted-foreground mb-6">
