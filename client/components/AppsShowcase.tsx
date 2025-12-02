@@ -118,7 +118,7 @@ export function AppsShowcase() {
 
                   {/* Learn More Link */}
                   <a
-                    href={`#app-${app.id}`}
+                    href="https://healthbudddy.netlify.app"
                     className={`inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 smooth-transition group/link`}
                   >
                     Learn More
