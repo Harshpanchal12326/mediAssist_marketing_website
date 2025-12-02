@@ -9,7 +9,7 @@ const team = [
       "Visionary leader and technical architect of mediassist. Driving innovation in healthcare technology.",
     email: "aditghosh5112005@gmail.com",
     linkedin: "https://linkedin.com/in/adit-ghosh-9b4723326",
-    initials: "AG",
+    image: "/Adit.png",   // 🔥 added image
     color: "from-blue-500 to-cyan-500",
   },
   {
@@ -20,7 +20,7 @@ const team = [
       "Operations expert ensuring seamless healthcare platform delivery and user satisfaction.",
     email: "subhrajeet1950@gmail.com",
     linkedin: "https://linkedin.com/in/subhrajeet-dash-9a449831b",
-    initials: "SD",
+    image: "/Subhrajeet.png",   // 🔥 added image
     color: "from-emerald-500 to-teal-500",
   },
   {
@@ -31,10 +31,11 @@ const team = [
       "Financial strategist managing sustainable growth and business operations of mediassist.",
     email: "harshpanchal12326@gmail.com",
     linkedin: "https://linkedin.com/in/harsh-panchal-a4853a340",
-    initials: "HP",
+    image: "/Harsh.png",   // 🔥 added image
     color: "from-orange-500 to-rose-500",
   },
 ];
+
 
 export function Team() {
   return (
@@ -61,18 +62,18 @@ export function Team() {
               key={member.id}
               className="group bg-charcoal-900 rounded-2xl overflow-hidden border border-primary/30 glow-card smooth-transition hover:-translate-y-2"
             >
-              {/* Photo Placeholder with glow */}
               <div
-                className={`h-56 bg-gradient-to-br ${member.color} flex items-center justify-center relative overflow-hidden glow-icon group-hover:animate-pulse`}
-              >
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/60 to-transparent opacity-0 group-hover:opacity-100 smooth-transition"></div>
+  className={`h-56 bg-gradient-to-br ${member.color} flex items-center justify-center relative overflow-hidden glow-icon group-hover:animate-pulse`}
+>
+  <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/60 to-transparent opacity-0 group-hover:opacity-100 smooth-transition"></div>
 
-                {/* Avatar initials */}
-                <div className="text-6xl font-bold text-white/90 group-hover:scale-110 smooth-transition">
-                  {member.initials}
-                </div>
-              </div>
+  <img
+    src={member.image}
+    alt={member.name}
+    className="w-full h-full object-cover smooth-transition group-hover:scale-110"
+  />
+</div>
+
 
               {/* Content */}
               <div className="p-8">
