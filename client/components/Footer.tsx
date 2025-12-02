@@ -71,7 +71,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#clinicxpert"
+                  href="https://healthbudddy.netlify.app"
                   className="hover:text-primary smooth-transition"
                 >
                   ClinicXpert
@@ -79,14 +79,14 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#pharmamate"
+                  href="https://pharmamate.netlify.app"
                   className="hover:text-primary smooth-transition"
                 >
                   PharmaMate
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary smooth-transition">
+                <a href="https://pharmamate.netlify.app" className="hover:text-primary smooth-transition">
                   Desktop Software
                 </a>
               </li>
