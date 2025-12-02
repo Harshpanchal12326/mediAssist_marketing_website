@@ -28,36 +28,36 @@ export function SystemOverview() {
             </p>
 
             <div className="space-y-6 mb-8">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-teal flex items-center justify-center flex-shrink-0 mt-1">
+              <div className="flex items-start gap-4 group">
+                <div className="w-10 h-10 rounded-lg bg-gradient-teal flex items-center justify-center flex-shrink-0 mt-1 glow-icon group-hover:animate-pulse">
                   <span className="text-white font-bold text-sm">1</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1 text-foreground">Patient Access</h3>
+                  <h3 className="font-bold text-lg mb-1 text-foreground group-hover:text-primary smooth-transition">Patient Access</h3>
                   <p className="text-muted-foreground">
                     Book appointments, order medicines, and access your complete health records in one place.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-teal flex items-center justify-center flex-shrink-0 mt-1">
+              <div className="flex items-start gap-4 group">
+                <div className="w-10 h-10 rounded-lg bg-gradient-teal flex items-center justify-center flex-shrink-0 mt-1 glow-icon group-hover:animate-pulse">
                   <span className="text-white font-bold text-sm">2</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1 text-foreground">Doctor Management</h3>
+                  <h3 className="font-bold text-lg mb-1 text-foreground group-hover:text-primary smooth-transition">Doctor Management</h3>
                   <p className="text-muted-foreground">
                     Manage appointments, create prescriptions, and track patient outcomes efficiently.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-teal flex items-center justify-center flex-shrink-0 mt-1">
+              <div className="flex items-start gap-4 group">
+                <div className="w-10 h-10 rounded-lg bg-gradient-teal flex items-center justify-center flex-shrink-0 mt-1 glow-icon group-hover:animate-pulse">
                   <span className="text-white font-bold text-sm">3</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1 text-foreground">Pharmacy Integration</h3>
+                  <h3 className="font-bold text-lg mb-1 text-foreground group-hover:text-primary smooth-transition">Pharmacy Integration</h3>
                   <p className="text-muted-foreground">
                     Verify patient IDs, dispense medicines securely, and maintain prescription records.
                   </p>
